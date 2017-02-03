@@ -5,6 +5,7 @@ import { withRouter } from 'react-router'
 import * as actions from '../../actions';
 
 class Home extends Component {
+
   constructor(props) {
     super(props);
 
@@ -16,7 +17,7 @@ class Home extends Component {
   render() {
     return (
       <div className="view-container">
-      	<h1>Test</h1>
+      	<h1>Home</h1>
       </div>
     );
   }

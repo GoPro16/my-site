@@ -1,3 +1,7 @@
+var models = require('../Database/models');
+
 module.exports.getHome = function(req,res){
-	res.send('Home');
+	models.db.insert(function(err){
+		res.send('Inserted');
+	});
 }

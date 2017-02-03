@@ -8,6 +8,8 @@ import thunk from 'redux-thunk';
 
 import App from './components/app';
 import Home from './components/Home';
+import Reactroids from './components/Astroids';
+import ReactBuild from './components/TestGame';
 import reducers from './reducers';
 
 const createStoreWithMiddleware = applyMiddleware(thunk)(createStore);
@@ -17,6 +19,8 @@ ReactDOM.render(
   <Provider store={store}>
     <Router history={browserHistory}>
       <Route path="/" component={Home} />
+      <Route path="/astroids" component={Reactroids} />
+      <Route path="/testgame" component={ReactBuild} />
     </Router>
   </Provider>
   , document.querySelector('.app-container'));
