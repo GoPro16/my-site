@@ -1,27 +1,10 @@
-import React, { Component } from 'react';
+import React from 'react';
 import { connect } from 'react-redux';
-import { withRouter } from 'react-router'
-
+import { withRouter } from 'react-router';
+import {Home} from './Home';
+import {render} from 'react-dom';
 import * as actions from '../../actions';
-
-class Home extends Component {
-
-  constructor(props) {
-    super(props);
-
-    this.state ={
-
-    }
-  }
-
-  render() {
-    return (
-      <div className="view-container">
-      	<h1>Home</h1>
-      </div>
-    );
-  }
-}
+import style from './style.scss'; 
 
 function mapStateToProps(state) {
   return { authenticated: state.authenticated };

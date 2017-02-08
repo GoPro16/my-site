@@ -22,5 +22,5 @@ ReactDOM.render(
       <Route path="/astroids" component={Reactroids} />
       <Route path="/testgame" component={ReactBuild} />
     </Router>
-  </Provider>
+  </Provider>  
   , document.querySelector('.app-container'));

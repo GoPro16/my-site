@@ -48,6 +48,7 @@ export default class Ship{
 
     // Draw
     const context = state.context;
+    context.clearRect(0,0,  state.screen.width,state.screen.height);
     context.save();
     context.translate(this.position.x, this.position.y);
     context.strokeStyle = '#ffffff';
