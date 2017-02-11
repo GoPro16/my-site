@@ -4,7 +4,7 @@ import { withRouter } from 'react-router';
 import {Home} from './Home';
 import {render} from 'react-dom';
 import * as actions from '../../actions';
-import style from './style.scss'; 
+import style from './assets/css/main.scss'; 
 
 function mapStateToProps(state) {
   return { authenticated: state.authenticated };

@@ -19,8 +19,12 @@ module.exports = {
         test: /\.(png|jpg)$/,
         loader: 'file-loader?name=images/[name].[ext]'
       },{
-        test: /\.scss$/,
+        test: /\.(scss|css)$/,
         loaders: [ 'style-loader', 'css-loader', 'sass-loader' ]
+      },
+      {
+        test: /\.(eot|svg|ttf|woff|woff2)$/,
+        loader: 'file-loader?name=public/fonts/[name].[ext]'
       }
     ]
   },

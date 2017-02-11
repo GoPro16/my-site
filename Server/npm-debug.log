@@ -1,35 +1,33 @@
 0 info it worked if it ends with ok
-1 verbose cli [ 'C:\\Program Files\\nodejs\\node.exe',
-1 verbose cli   'C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js',
-1 verbose cli   'start' ]
-2 info using npm@4.0.5
-3 info using node@v7.4.0
+1 verbose cli [ '/usr/local/bin/node', '/usr/local/bin/npm', 'start' ]
+2 info using npm@3.10.10
+3 info using node@v6.9.5
 4 verbose run-script [ 'prestart', 'start', 'poststart' ]
 5 info lifecycle personal_website@1.0.0~prestart: personal_website@1.0.0
 6 silly lifecycle personal_website@1.0.0~prestart: no script for prestart, continuing
 7 info lifecycle personal_website@1.0.0~start: personal_website@1.0.0
 8 verbose lifecycle personal_website@1.0.0~start: unsafe-perm in lifecycle true
-9 verbose lifecycle personal_website@1.0.0~start: PATH: C:\Program Files\nodejs\node_modules\npm\bin\node-gyp-bin;C:\Users\n01038185\Documents\GitHub\PersonalWebsite\Server\node_modules\.bin;C:\Program Files (x86)\Java\jdk1.8.0_101\bin;C:\Windows\System32;C:\Program Files (x86)\Java\jre1.8.0_101\bin;C:\Program Files\nodejs\;C:\Windows\System32;C:\Users\n01038185\AppData\Local\Google\Cloud SDK\google-cloud-sdk\bin;C:\Users\n01038185\AppData\Roaming\npm
-10 verbose lifecycle personal_website@1.0.0~start: CWD: C:\Users\n01038185\Documents\GitHub\PersonalWebsite\Server
-11 silly lifecycle personal_website@1.0.0~start: Args: [ '/d /s /c', 'node server.js' ]
+9 verbose lifecycle personal_website@1.0.0~start: PATH: /usr/local/lib/node_modules/npm/bin/node-gyp-bin:/Users/kgray/Documents/Github/PersonalWebsite/Server/node_modules/.bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin
+10 verbose lifecycle personal_website@1.0.0~start: CWD: /Users/kgray/Documents/Github/PersonalWebsite/Server
+11 silly lifecycle personal_website@1.0.0~start: Args: [ '-c', 'node server.js' ]
 12 silly lifecycle personal_website@1.0.0~start: Returned: code: 1  signal: null
 13 info lifecycle personal_website@1.0.0~start: Failed to exec start script
 14 verbose stack Error: personal_website@1.0.0 start: `node server.js`
 14 verbose stack Exit status 1
-14 verbose stack     at EventEmitter.<anonymous> (C:\Program Files\nodejs\node_modules\npm\lib\utils\lifecycle.js:279:16)
+14 verbose stack     at EventEmitter.<anonymous> (/usr/local/lib/node_modules/npm/lib/utils/lifecycle.js:255:16)
 14 verbose stack     at emitTwo (events.js:106:13)
 14 verbose stack     at EventEmitter.emit (events.js:191:7)
-14 verbose stack     at ChildProcess.<anonymous> (C:\Program Files\nodejs\node_modules\npm\lib\utils\spawn.js:40:14)
+14 verbose stack     at ChildProcess.<anonymous> (/usr/local/lib/node_modules/npm/lib/utils/spawn.js:40:14)
 14 verbose stack     at emitTwo (events.js:106:13)
 14 verbose stack     at ChildProcess.emit (events.js:191:7)
-14 verbose stack     at maybeClose (internal/child_process.js:885:16)
+14 verbose stack     at maybeClose (internal/child_process.js:877:16)
 14 verbose stack     at Process.ChildProcess._handle.onexit (internal/child_process.js:226:5)
 15 verbose pkgid personal_website@1.0.0
-16 verbose cwd C:\Users\n01038185\Documents\GitHub\PersonalWebsite\Server
-17 error Windows_NT 6.1.7601
-18 error argv "C:\\Program Files\\nodejs\\node.exe" "C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js" "start"
-19 error node v7.4.0
-20 error npm  v4.0.5
+16 verbose cwd /Users/kgray/Documents/Github/PersonalWebsite/Server
+17 error Darwin 16.4.0
+18 error argv "/usr/local/bin/node" "/usr/local/bin/npm" "start"
+19 error node v6.9.5
+20 error npm  v3.10.10
 21 error code ELIFECYCLE
 22 error personal_website@1.0.0 start: `node server.js`
 22 error Exit status 1

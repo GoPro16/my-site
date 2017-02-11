@@ -33,7 +33,9 @@ export default class Ship{
     if(state.keys.down){
     	this.move(0,1);
     }
-  
+    if(state.keys.space){
+        this.fire();
+    } 
 
     // Move
     this.position.x += this.velocity.x;
