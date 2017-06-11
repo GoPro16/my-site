@@ -1,18 +1,65 @@
 {
-  "name": "githubpagesapp",
-  "version": "0.1.0",
-  "private": true,
-  "dependencies": {
-    "react": "^15.5.4",
-    "react-dom": "^15.5.4"
-  },
-  "devDependencies": {
-    "react-scripts": "1.0.7"
-  },
+  "name": "charter-school-website",
+  "version": "1.0.0",
+  "description": "This the charter school site",
+  "main": "index.js",
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
+    "start": "node ./node_modules/webpack-dev-server/bin/webpack-dev-server.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "test:watch": "npm run test -- --watch",
+    "build": "webpack --config webpack.config.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GoPro16/ffs_website.git"
+  },
+  "author": "Kyle Gray",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/GoPro16/ffs_website/issues"
+  },
+  "homepage": "https://github.com/GoPro16/ffs_website#readme",
+  "devDependencies": {
+    "babel-core": "^6.18.2",
+    "babel-loader": "^6.2.7",
+    "babel-plugin-transform-decorators-legacy": "^1.3.4",
+    "babel-preset-es2015": "^6.1.18",
+    "babel-preset-react": "^6.1.18",
+    "chai": "^3.5.0",
+    "chai-jquery": "^2.0.0",
+    "component-directory-webpack-plugin": "^1.0.5",
+    "css-loader": "^0.25.0",
+    "file-loader": "^0.9.0",
+    "jquery": "^2.2.1",
+    "jsdom": "^8.1.0",
+    "mocha": "^2.4.5",
+    "node-sass": "^3.11.2",
+    "react-addons-test-utils": "^0.14.7",
+    "sass-loader": "^4.0.2",
+    "style-loader": "^0.13.1",
+    "url-loader": "^0.5.8",
+    "webpack": "^2.1.0-beta.22",
+    "webpack-dev-server": "^1.16.5"
+  },
+  "dependencies": {
+    "babel-preset-stage-1": "^6.1.18",
+    "bootstrap": "^3.3.7",
+    "bootstrap-sass": "^3.3.7",
+    "cookies-js": "^1.2.2",
+    "core-decorators": "^0.19.0",
+    "isomorphic-fetch": "^2.2.1",
+    "lodash": "^3.10.1",
+    "moment": "^2.18.1",
+    "react": "^0.14.3",
+    "react-bootstrap": "^0.30.8",
+    "react-dom": "^0.14.3",
+    "react-redux": "^4.0.0",
+    "react-router": "^2.0.0",
+    "redux": "^3.0.4",
+    "redux-actions": "^2.0.3",
+    "redux-thunk": "^2.1.0",
+    "validator": "^6.1.0",
+    "webpack": "~2.6.1",
+    "webpack-dev-server": "~2.4.5"
   }
 }

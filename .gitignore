@@ -9,6 +9,9 @@
 # production
 /build
 
+# outputPage
+/GoPro16.github.io
+
 # misc
 .DS_Store
 .env.local
