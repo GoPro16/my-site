@@ -1,9 +1,0 @@
-module.exports = {
-   database: 'personal_site',
-   username: 'kgray',
-   password: 'caWresp4DAvu',
-   host: 'danek.me',
-   port: 3306,
-   dialect: 'mysql',
-   native: true
- };
