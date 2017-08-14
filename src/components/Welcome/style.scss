@@ -1,0 +1,26 @@
+.welcome-content {
+    padding-top: 24px;
+    .welcome-heading {
+        margin: 0 30% 0 5%;
+        .jumbotron {
+            padding-left: 32px;
+        }
+    } //heading
+}
+
+.link-items {
+    margin-top:15%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    
+    h3{
+        margin: 24px;
+        font-weight: bold;
+        text-align: center;
+    }
+    img{
+        width:128px;
+        align-self: center;
+    }
+}
