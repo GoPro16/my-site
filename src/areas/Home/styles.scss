@@ -3,32 +3,35 @@ body {
     font-family: 'Droid Sans Mono', monospace;
     font-size: .78em;
 }
+.home-wrapper{
+  max-width:1300px;
+  .home-container {
+      padding: 1em;
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      grid-auto-rows: minmax(12.5em, auto);
+      grid-gap: 1em;
+      justify-items: stretch;
+      align-items: stretch;
+  }
 
-.home-container {
-    padding: 1em;
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    grid-auto-rows: minmax(12.5em, auto);
-    grid-gap: 1em;
-    justify-items: stretch;
-    align-items: stretch;
-}
+  @media all and (max-width: 900px) {
+      body{
+          font-size:.4em;
+      }
+      .home-container{
+          display:flex;
+          flex-direction:column;
+          > div{
+              margin:.5em 0;
+          }
+      }
+  }
 
-@media all and (max-width: 900px) {
-    body{
-        font-size:.4em;
-    }
-    .home-container{
-        display:flex;
-        flex-direction:column;
-        > div{
-            margin:.5em 0;
-        }
-    }
-}
-
-.copyright {
-    color: white;
-    margin-top:0;
-    margin-left: 1em;
+  .copyright {
+      color: white;
+      margin-top:0;
+      margin-left: 1em;
+      align-self: left;
+  }
 }

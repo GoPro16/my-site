@@ -4,3 +4,14 @@ html{
     font-family:$global-font;
         background: rgba(0, 0, 0, .8);
 }
+.app-container{
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media all and (max-width: 1920px){
+  .app-container{
+  margin-top:36px;
+}
+}

@@ -26,15 +26,15 @@ export default class Home extends Component {
   render() {
 
     return (
-      <div>
+      <div className="home-wrapper">
        <div className="home-container">
-        <Welcome />
-        <Portfolio />
-        <About />
-        <PicturePane />
-        <Contact />
-    </div>
-      <p className="copyright">Copyright © 2017 Kyle Gray</p>
+         <Welcome />
+          <Portfolio />
+          <About />
+          <PicturePane />
+          <Contact />
+        </div>
+        <p className="copyright">Copyright © 2017 Kyle Gray</p>
     </div>
     );
   }
