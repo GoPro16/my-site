@@ -1,24 +1,14 @@
 {
-  "name": "charter-school-website",
+  "name": "floridaframing",
   "version": "1.0.0",
-  "description": "This the charter school site",
+  "description": "Website for Florida Framing Supplies",
   "main": "index.js",
   "scripts": {
-    "start": "node ./node_modules/webpack-dev-server/bin/webpack-dev-server.js",
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "test:watch": "npm run test -- --watch",
+    "start": "webpack-dev-server",
     "build": "webpack --config webpack.config.js"
   },
   "repository": {
-    "type": "git",
-    "url": "git+https://github.com/GoPro16/ffs_website.git"
   },
-  "author": "Kyle Gray",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/GoPro16/ffs_website/issues"
-  },
-  "homepage": "https://github.com/GoPro16/ffs_website#readme",
   "devDependencies": {
     "babel-core": "^6.18.2",
     "babel-loader": "^6.2.7",
@@ -43,25 +33,26 @@
   },
   "dependencies": {
     "babel-preset-stage-1": "^6.1.18",
-    "bootstrap": "^3.3.7",
-    "bootstrap-sass": "^3.3.7",
+    "build-bundle": "^2.0.8",
+    "classnames": "^2.2.5",
     "cookies-js": "^1.2.2",
     "core-decorators": "^0.19.0",
     "isomorphic-fetch": "^2.2.1",
     "lodash": "^3.10.1",
-    "material-ui": "^0.18.3",
     "moment": "^2.18.1",
-    "react": "^15.4.0",
-    "react-bootstrap": "^0.30.8",
-    "react-dom": "^15.4.0",
+    "react": "^15.6.1",
+    "react-addons-test-utils": "^15.6.0",
+    "react-dom": "^15.6.1",
     "react-redux": "^4.0.0",
     "react-router": "^2.0.0",
-    "react-tap-event-plugin": "^2.0.1",
+    "react-router-dom": "^4.1.2",
     "redux": "^3.0.4",
     "redux-actions": "^2.0.3",
     "redux-thunk": "^2.1.0",
     "validator": "^6.1.0",
     "webpack": "~2.6.1",
     "webpack-dev-server": "~2.4.5"
-  }
+  },
+  "author": "Kyle Gray & Michael Turner",
+  "license": "ISC"
 }
