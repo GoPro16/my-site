@@ -1,17 +1,26 @@
-@import '~shared/styles/colors';
+html,body,#root{
+    height:100%;
+    margin:0;
+    width:100%;
+}
+.app-container {
+    height:100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .gear-icon {
+        margin-top:1.5rem;
+        width:100%;
+        animation: spin 8s linear infinite;
+    }
+}
 
-html{
-    font-family:$global-font;
-        background: rgba(0, 0, 0, .8);
-}
-.app-container{
-  display:flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-@media all and (max-width: 1920px){
-  .app-container{
-  margin-top:36px;
-}
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
 }

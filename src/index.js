@@ -1,29 +1,21 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import {
-  BrowserRouter as Router,
-  Route,
-  Switch,
-  Redirect,
-  Link
-} from "react-router-dom";
-import { Provider } from "react-redux";
-import { createStore, applyMiddleware, combineReducers } from "redux";
-import thunk from "redux-thunk";
-import reducers from "reduxStore";
-import App from './areas/App';
+import registerServiceWorker from './registerServiceWorker';
+import 'bulma/css/bulma.css'
 
-const createStoreWithMiddleware = applyMiddleware(thunk)(createStore);
-const store = createStoreWithMiddleware(
-  reducers,
-  window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
-);
+import App from "./areas/App";
 
-ReactDOM.render(
-  <Provider store={store}>
-    <Router>
-      <App />
-    </Router>
-  </Provider>,
-  document.getElementById("root")
-);
+const render = () => {
+  ReactDOM.render(<App />, document.getElementById("root"));
+};
+
+registerServiceWorker();
+
+render(App);
+
+// Webpack Hot Module Replacement API
+if (module.hot) {
+  module.hot.accept("./areas/App", () => {
+    render(App);
+  });
+}
